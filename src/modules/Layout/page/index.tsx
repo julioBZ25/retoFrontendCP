@@ -17,7 +17,7 @@ const Layout = () => {
 
   return (
     <>
-      <div className="navbar bg-base-100 shadow-xl px-5">
+      <div className="navbar bg-base-800 shadow-xl px-5">
         <div className="navbar-start flex items-center">
           <div className="dropdown py-2">
             <div tabIndex={0} role="button" className="lg:hidden">
