@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Layout from "./modules/Layout/page";
 
@@ -7,9 +7,15 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <Navigate to='/home' />,
     children: [
       {
+        index: true,
+        element: <Navigate to='/home' />
+      },
+      {
         path: "home",
+        index: true,
         async lazy() {
           const component = await import("./modules/Home/page");
           return { Component: component.default };
