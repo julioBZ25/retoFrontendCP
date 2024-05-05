@@ -1,6 +1,6 @@
-# Nombre del Proyecto
+# Reto Frontend CP
 
-Este proyecto es una aplicación web desarrollada con Vite que incluye las siguientes vistas: inicio, inicio de sesión, dulcería y proceso de compra.
+Este proyecto es una aplicación web desarrollada con Vite & React.js que incluye las siguientes vistas: inicio, inicio de sesión, dulcería y proceso de compra para el reto técnico de CP.
 
 ## Cómo Iniciar el Proyecto
 
