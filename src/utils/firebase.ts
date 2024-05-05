@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDzbEFNhZyOwQNfNh4AYaJ2V2RfY6L73ZQ",
-  authDomain: "personalauth-82c35.firebaseapp.com",
-  projectId: "personalauth-82c35",
-  storageBucket: "personalauth-82c35.appspot.com",
-  messagingSenderId: "556399113377",
-  appId: "1:556399113377:web:1818fbc31034165d0f6ce0",
+  apiKey: process.env.API_key,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
 
 // Initialize Firebase
